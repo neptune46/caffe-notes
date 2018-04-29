@@ -17,6 +17,7 @@ sudo apt install --no-install-recommends libboost-all-dev
 
 sudo apt install libopenblas-dev
 
+sudo apt install libatlas-base-dev
 ```
 
 In your Makefile.config try to append **/usr/include/hdf5/serial/** to INCLUDE_DIRS:
