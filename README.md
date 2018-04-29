@@ -11,10 +11,15 @@ git clone https://github.com/BVLC/caffe.git
 ### install dependency libraries
 
 ```bash
-sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 
-sudo apt-get install --no-install-recommends libboost-all-dev
+sudo apt install --no-install-recommends libboost-all-dev
+
+sudo apt install libopenblas-dev
+
 ```
+
+In your Makefile.config try to append **/usr/include/hdf5/serial/** to INCLUDE_DIRS:
 
 ### compilation with make
 
